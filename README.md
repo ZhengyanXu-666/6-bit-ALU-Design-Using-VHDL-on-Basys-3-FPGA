@@ -129,29 +129,57 @@ The reported LUT utilisation demonstrates a compact hardware implementation on t
 | Hardware Platform | Digilent Basys 3 |
 | FPGA Architecture | Xilinx Artix-7 |
 
+
 ## Repository Structure
 
 ```text
-6-bit-ALU-Design/
+6-bit-ALU-Design-Using-VHDL-on-Basys-3-FPGA/
 │
 ├── README.md
 ├── ALU.xpr
-│
-├── ALU.srcs/
-│   ├── sources_1/
-│   ├── sim_1/
-│   ├── constrs_1/
-│   └── utils_1/
-│
+├── Report.pdf
 ├── test_alu.vhd
 ├── test_alu_behav.wcfg
 │
-└── report/
-    └── 6-bit-ALU-Design-using-VHDL.pdf
+└── ALU.srcs/
+    ├── sources_1/
+    │   └── new/
+    │       ├── ALU.vhd
+    │       ├── ADD6.vhd
+    │       ├── SUB6.vhd
+    │       ├── AND6.vhd
+    │       ├── OR6.vhd
+    │       ├── XOR6.vhd
+    │       ├── NOR6.vhd
+    │       ├── FA.vhd
+    │       └── HA.vhd
+    │
+    ├── sim_1/
+    │   └── new/
+    │       ├── test_alu.vhd
+    │       ├── tb_ADD6.vhd
+    │       ├── tb_ALU.vhd
+    │       ├── tb_AND6.vhd
+    │       ├── tb_NOR6.vhd
+    │       ├── tb_OR6.vhd
+    │       ├── tb_SUB6.vhd
+    │       └── tb_XOR6.vhd
+    │
+    ├── constrs_1/
+    │   └── new/
+    │       └── pin.xdc
+    │
+    └── utils_1/
+        └── imports/
+            └── synth_1/
+                └── ALU.dcp
 ```
+
+**Project Demo:** [Watch or download the video demonstration](https://github.com/ZhengyanXu-666/6-bit-ALU-Design-Using-VHDL-on-Basys-3-FPGA/releases/download/v1.0.0/ALU_Introduction_Simulation_and_Hardware_Test.mp4)  
+
 
 ## Documentation
 
-The complete technical report is available in the `report/` directory.
+The complete technical report is available in [Report.pdf](Report.pdf).
 
-It includes the system architecture, detailed module design, hardware configuration, simulation results, FPGA testing, timing analysis, and resource utilisation.
+The report covers the system architecture, detailed module design, hardware configuration, simulation results, FPGA testing, timing analysis, and resource utilisation.
