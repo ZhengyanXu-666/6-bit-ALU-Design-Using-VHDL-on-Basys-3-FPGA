@@ -10,6 +10,16 @@ The ALU supports six arithmetic and logical operations, including addition, subt
 
 The design was synthesised using Xilinx Vivado and deployed on a Basys 3 development board featuring an Artix-7 FPGA.
 
+
+## Project Demonstration
+
+A complete walkthrough of the ALU architecture,
+VHDL implementation, simulation, and Basys 3
+hardware demonstration.
+
+[Watch / Download Project Demo](https://github.com/ZhengyanXu-666/6-bit-ALU-Design-Using-VHDL-on-Basys-3-FPGA/releases/download/v1.0.0/ALU_Introduction_Simulation_and_Hardware_Test.mp4)
+
+
 ## Key Features
 
 - Modular VHDL-based hardware architecture
